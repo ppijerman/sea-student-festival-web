@@ -25,10 +25,11 @@
   },
   "homepage": "https://github.com/ppijerman/sea-student-festival-web#readme",
   "dependencies": {
+    "contentful": "10.0.0-beta-v10.8",
     "next": "latest",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "contentful": "10.0.0-beta-v10.8"
+    "styled-components": "^5.3.5"
   },
   "devDependencies": {
     "@types/node": "18.0.3",
@@ -37,5 +38,6 @@
     "eslint": "8.19.0",
     "eslint-config-next": "12.2.0",
     "typescript": "4.7.4"
-  }
+  },
+  "packageManager": "yarn@3.2.1"
 }
