@@ -1,0 +1,41 @@
+{
+  "name": "sea-student-festival-web",
+  "version": "1.0.0",
+  "description": "Website for Southeast Asian Student Festival held by Indonesian Student Association in Germany",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ppijerman/sea-student-festival-web.git"
+  },
+  "keywords": [
+    "nextjs",
+    "event"
+  ],
+  "author": "PPI Jerman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ppijerman/sea-student-festival-web/issues"
+  },
+  "homepage": "https://github.com/ppijerman/sea-student-festival-web#readme",
+  "dependencies": {
+    "next": "latest",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "contentful": "10.0.0-beta-v10.8"
+  },
+  "devDependencies": {
+    "@types/node": "18.0.3",
+    "@types/react": "18.0.15",
+    "@types/react-dom": "18.0.6",
+    "eslint": "8.19.0",
+    "eslint-config-next": "12.2.0",
+    "typescript": "4.7.4"
+  }
+}
