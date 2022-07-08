@@ -6,7 +6,7 @@ import Button from "./Button";
 const CountdownFrame = styled.div`
     background-color: var(--blue);
     padding: 40px;
-    height: 300px;
+    min-height: 300px;
     border-radius: 30px;
     border: solid 8px var(--sand);
     color: var(--yellow);
@@ -14,16 +14,31 @@ const CountdownFrame = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @media only screen and (max-width: 992px) {
+      flex-direction: row;
+    }
   `;
 
 const CountdownBody = styled.div`
     display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
     justify-content: center;
+
+    @media only screen and (max-width: 992px) {
+      flex-direction: column;
+    }
   `;
 
 const CountdownDigit = styled.div`
     width: 200px;
     margin-top: -20px;
+  
+    @media only screen and (max-width: 992px) {
+      margin-bottom: 3em;
+      margin-top: 0;
+    }
   `;
 
 const CountdownNumber = styled.div`
@@ -34,6 +49,10 @@ const CountdownNumber = styled.div`
     margin: 0px;
     line-height: 80%;
     text-align: center;
+
+    @media only screen and (max-width: 992px) {
+      font-size: 100px;
+    }
   `;
 
 const CountdownUnit = styled.div`
@@ -49,6 +68,10 @@ const CountdownUnit = styled.div`
 const BuyTicketCountdownButton = styled(Button)`
     border: solid 8px var(--sand);
     margin-top: -37.5px;
+
+    @media only screen and (max-width: 992px) {
+      font-size: 16px;
+    }
   `;
 
 const ButtonText = styled.span`
