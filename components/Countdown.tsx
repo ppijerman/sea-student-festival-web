@@ -48,7 +48,7 @@ const CountdownUnit = styled.div`
 
 const BuyTicketCountdownButton = styled(Button)`
     border: solid 8px var(--sand);
-    margin-top: -35px;
+    margin-top: -37.5px;
   `;
 
 const ButtonText = styled.span`
