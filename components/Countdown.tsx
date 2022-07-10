@@ -1,12 +1,21 @@
 import { useEffect, useState } from 'react';
-// @ts-ignore
 import styled from 'styled-components';
 import Button from "./Button";
 
+const CountdownWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin: 0 20px;
+  `;
+
 const CountdownFrame = styled.div`
+    align-self: center;
     background-color: var(--blue);
     padding: 40px;
     min-height: 300px;
+    max-width: 100%;
+    width: max-content;
     border-radius: 30px;
     border: solid 8px var(--sand);
     color: var(--yellow);
@@ -14,10 +23,6 @@ const CountdownFrame = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    @media only screen and (max-width: 992px) {
-      flex-direction: row;
-    }
   `;
 
 const CountdownBody = styled.div`
@@ -25,10 +30,23 @@ const CountdownBody = styled.div`
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 25px;
 
     @media only screen and (max-width: 992px) {
       flex-direction: column;
+      align-self: center;
     }
+  `;
+
+const CountdownTitle = styled.div`
+  font-size: 48px;
+  text-align: center;
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-family: 'Piazzolla', serif;
+  line-height: 80%;
+  margin-bottom: 20px;
+  word-break: break-word;
   `;
 
 const CountdownDigit = styled.div`
@@ -68,6 +86,8 @@ const CountdownUnit = styled.div`
 const BuyTicketCountdownButton = styled(Button)`
     border: solid 8px var(--sand);
     margin-top: -37.5px;
+    width: max-content;
+    align-self: center;
 
     @media only screen and (max-width: 992px) {
       font-size: 16px;
@@ -116,8 +136,11 @@ const Countdown = ({ time }) => {
   };
 
   return (
-      <>
+      <CountdownWrapper>
         <CountdownFrame>
+          <CountdownTitle>
+            Opening Countdown
+          </CountdownTitle>
           <CountdownBody>
             <CountdownDigit>
               <CountdownNumber>{(duration / (3600 * 24 * 1000)).toFixed(0)}</CountdownNumber>
@@ -140,7 +163,7 @@ const Countdown = ({ time }) => {
         <BuyTicketCountdownButton href={'/'}>
           <ButtonText>Grab your ticket</ButtonText> &rarr;
         </BuyTicketCountdownButton>
-      </>
+      </CountdownWrapper>
   );
 };
 

@@ -1,9 +1,8 @@
-// @ts-ignore
 import styled from "styled-components";
 
 const Button = styled.a`
         background: var(--red);
-        font-weight: black;
+        font-weight: 900;
         font-size: 24px;
         color: var(--sand);
         padding: 10px 20px;
