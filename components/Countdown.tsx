@@ -138,36 +138,40 @@ const Countdown = ({ time }) => {
     clearInterval(ticker);
   };
 
+  const days = duration / (3600 * 24 * 1000);
+  const hours = new Date(duration).getHours();
+  const minutes = new Date(duration).getMinutes();
+  const seconds = new Date(duration).getSeconds();
+
   return (
     <CountdownWrapper>
       <CountdownFrame>
         <CountdownTitle>Opening Countdown</CountdownTitle>
         <CountdownBody>
           <CountdownDigit>
+            <CountdownNumber>{days.toFixed(0)}</CountdownNumber>
+            <CountdownUnit>{days > 1 ? 'Days' : 'Day'}</CountdownUnit>
+          </CountdownDigit>
+          <CountdownDigit>
             <CountdownNumber>
-              {(duration / (3600 * 24 * 1000)).toFixed(0)}
+              {hours < 10 ? 0 : ''}
+              {hours}
             </CountdownNumber>
-            <CountdownUnit>
-              {duration / (3600 * 24 * 1000) > 1 ? 'Days' : 'Day'}
-            </CountdownUnit>
+            <CountdownUnit>{hours > 1 ? 'Hours' : 'Hour'}</CountdownUnit>
           </CountdownDigit>
           <CountdownDigit>
-            <CountdownNumber>{new Date(duration).getHours()}</CountdownNumber>
-            <CountdownUnit>
-              {new Date(duration).getHours() > 1 ? 'Hours' : 'Hour'}
-            </CountdownUnit>
+            <CountdownNumber>
+              {minutes < 10 ? 0 : ''}
+              {minutes}
+            </CountdownNumber>
+            <CountdownUnit>{minutes > 1 ? 'Minutes' : 'Minute'}</CountdownUnit>
           </CountdownDigit>
           <CountdownDigit>
-            <CountdownNumber>{new Date(duration).getMinutes()}</CountdownNumber>
-            <CountdownUnit>
-              {new Date(duration).getMinutes() > 1 ? 'Minutes' : 'Minute'}
-            </CountdownUnit>
-          </CountdownDigit>
-          <CountdownDigit>
-            <CountdownNumber>{new Date(duration).getSeconds()}</CountdownNumber>
-            <CountdownUnit>
-              {new Date(duration).getSeconds() > 1 ? 'Seconds' : 'Second'}
-            </CountdownUnit>
+            <CountdownNumber>
+              {seconds < 10 ? 0 : ''}
+              {seconds}
+            </CountdownNumber>
+            <CountdownUnit>{seconds > 1 ? 'Seconds' : 'Second'}</CountdownUnit>
           </CountdownDigit>
         </CountdownBody>
       </CountdownFrame>
