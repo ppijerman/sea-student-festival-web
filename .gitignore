@@ -105,6 +105,7 @@ dist
 /.idea/
 
 # Yarn 3
+!yarn.lock
 .pnp.*
 .yarn/*
 !.yarn/patches
