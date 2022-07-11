@@ -1,24 +1,31 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const BackgroundWrapper = styled.div`
   height: 100%;
   z-index: -999;
   position: absolute;
-  `;
+`;
 
-const starImagePaths = []
+const starImagePaths = [];
 
 const RandomStarGenerator = () => {
-  return (
-      <></>
-  )
-}
+  return <></>;
+};
 
-const Background = () => {
-  return (
-      <BackgroundWrapper>
-      </BackgroundWrapper>
-  )
-}
+// const Background = () => {
+//   return (
+//       <BackgroundWrapper>
 
-export default Background
+//       </BackgroundWrapper>
+//   )
+// }
+
+const Background = () => (
+  <>
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+  </>
+);
+
+export default Background;

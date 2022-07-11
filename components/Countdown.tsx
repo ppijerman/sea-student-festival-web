@@ -39,7 +39,7 @@ const CountdownBody = styled.div`
 `;
 
 const CountdownTitle = styled.div`
-  font-size: 44px;
+  font-size: 42px;
   text-align: center;
   font-weight: 900;
   letter-spacing: 2px;

@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import Button from "./Button";
+import styled from 'styled-components';
+import Button from './Button';
 
 const HeaderWrapper = styled.header`
   width: 100%;
@@ -12,7 +12,7 @@ const HeaderWrapper = styled.header`
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-`
+`;
 
 const HeaderItem = styled.div`
   height: 100%;
@@ -20,32 +20,44 @@ const HeaderItem = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  `;
+`;
 
-const HeaderLogo = styled(HeaderItem)`
-  
-  `;
+const HeaderLogo = styled(HeaderItem)``;
 
-const Logo = styled.image`
+const Logo = styled.img`
   max-height: 60px;
-  `;
+`;
 
-const HeaderLinks = styled(HeaderItem)`
-  `;
+const HeaderText = styled.p`
+  font-size: 17px;
+  font-weight: 900;
+  max-width: 230px;
+  font-family: 'Montserrat', sans-serif;
+
+  @media only screen and (min-width: 420px) {
+    font-size: 19px;
+  }
+`;
+
+const HeaderLinks = styled(HeaderItem)``;
+
+const HeaderButton = styled(Button)`
+  font-size: 16px;
+  text-align: center;
+`;
 
 const Header = () => {
-    return (
-        <HeaderWrapper>
-            <HeaderLogo>
-                <Logo/>
-            </HeaderLogo>
-            <HeaderLinks>
-                <Button href={'https://google.com'}>
-                    Grab your ticket
-                </Button>
-            </HeaderLinks>
-        </HeaderWrapper>
-    )
-}
+  return (
+    <HeaderWrapper>
+      <HeaderLogo>
+        {/* <Logo /> */}
+        <HeaderText>Southeast Asia Student Festival 2022</HeaderText>
+      </HeaderLogo>
+      <HeaderLinks>
+        <HeaderButton href={'https://google.com'}>Join Us!</HeaderButton>
+      </HeaderLinks>
+    </HeaderWrapper>
+  );
+};
 
-export default Header
+export default Header;
