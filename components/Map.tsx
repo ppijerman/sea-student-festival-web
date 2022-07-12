@@ -5,7 +5,9 @@ import styled from "styled-components";
 const MapLoading = styled.div`
   display: flex;
   font-family: 'Montserrat', sans-serif;
-  
+  align-items: center;
+  justify-content: center;
+  color: var(--sand);
   `;
 
 // @ts-ignore

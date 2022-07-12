@@ -15,7 +15,7 @@ const Section = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: 0;
+  z-index: 99;
 `;
 
 const Heading = styled.h1`
@@ -25,7 +25,7 @@ const Heading = styled.h1`
   line-height: 80%;
   font-weight: 900;
   color: var(--yellow);
-  z-index: 0;
+  z-index: 99;
 `;
 
 const MapWrapper = styled.div`
@@ -61,7 +61,7 @@ const Home: NextPage = () => {
         <Section>
           <Heading>Venue</Heading>
           <MapWrapper>
-            <Map lat={52.520008} lng={13.404954} zoom={10} label={'Venue'}/>
+            <Map lat={52.520008} lng={13.404954} zoom={13} label={'Venue'}/>
           </MapWrapper>
         </Section>
         <Section>
