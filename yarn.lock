@@ -14,7 +14,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/generator@npm:^7.18.6":
+"@babel/generator@npm:^7.18.7":
   version: 7.18.7
   resolution: "@babel/generator@npm:7.18.7"
   dependencies:
@@ -96,12 +96,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/parser@npm:^7.18.6":
-  version: 7.18.6
-  resolution: "@babel/parser@npm:7.18.6"
+"@babel/parser@npm:^7.18.6, @babel/parser@npm:^7.18.8":
+  version: 7.18.8
+  resolution: "@babel/parser@npm:7.18.8"
   bin:
     parser: ./bin/babel-parser.js
-  checksum: 533ffc26667b7e2e0d87ae11368d90b6a3a468734d6dfe9c4697c24f48373cf9cc35ee08e416728f087fc56531b68022f752097941feddc60e0223d69a4d4cad
+  checksum: b8426083f753a000bdb4929cb18c6ce5b68c23759245bf123515bf86cacb9f6e7ff61341a6e0d01a779a9a8a826c86062a0f4db424b88b5b51f67e121985d400
   languageName: node
   linkType: hard
 
@@ -136,30 +136,30 @@ __metadata:
   linkType: hard
 
 "@babel/traverse@npm:^7.4.5":
-  version: 7.18.6
-  resolution: "@babel/traverse@npm:7.18.6"
+  version: 7.18.8
+  resolution: "@babel/traverse@npm:7.18.8"
   dependencies:
     "@babel/code-frame": ^7.18.6
-    "@babel/generator": ^7.18.6
+    "@babel/generator": ^7.18.7
     "@babel/helper-environment-visitor": ^7.18.6
     "@babel/helper-function-name": ^7.18.6
     "@babel/helper-hoist-variables": ^7.18.6
     "@babel/helper-split-export-declaration": ^7.18.6
-    "@babel/parser": ^7.18.6
-    "@babel/types": ^7.18.6
+    "@babel/parser": ^7.18.8
+    "@babel/types": ^7.18.8
     debug: ^4.1.0
     globals: ^11.1.0
-  checksum: 5427a9db63984b2600f62b257dab18e3fc057997b69d708573bfc88eb5eacd6678fb24fddba082d6ac050734b8846ce110960be841ea1e461d66e2cde72b6b07
+  checksum: c406e01f45f13a666083f6e4ea32d2d5e20ce3a51ea48f6c8fe9d6a0469069f857af06866749959c4396f191393e39e7e6e7b2a8769afca7f50ca1046d6172bd
   languageName: node
   linkType: hard
 
-"@babel/types@npm:^7.18.6, @babel/types@npm:^7.18.7, @babel/types@npm:^7.8.3":
-  version: 7.18.7
-  resolution: "@babel/types@npm:7.18.7"
+"@babel/types@npm:^7.18.6, @babel/types@npm:^7.18.7, @babel/types@npm:^7.18.8, @babel/types@npm:^7.8.3":
+  version: 7.18.8
+  resolution: "@babel/types@npm:7.18.8"
   dependencies:
     "@babel/helper-validator-identifier": ^7.18.6
     to-fast-properties: ^2.0.0
-  checksum: 3114ce161c4ebcb70271e168aa5af5cecedf3278209161d5ba6124bd3f9cb02e3f3ace587ad1b53f7baa153b6b3714720721c72a9ef3ec451663862f9cc1f014
+  checksum: a485531faa9ff3b83ea94ba6502321dd66e39202c46d7765e4336cb4aff2ff69ebc77d97b17e21331a8eedde1f5490ce00e8a430c1041fc26854d636e6701919
   languageName: node
   linkType: hard
 
@@ -260,7 +260,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fortawesome/react-fontawesome@npm:latest":
+"@fortawesome/react-fontawesome@latest":
   version: 0.2.0
   resolution: "@fortawesome/react-fontawesome@npm:0.2.0"
   dependencies:
@@ -272,7 +272,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@googlemaps/js-api-loader@npm:^1.13.2":
+"@googlemaps/js-api-loader@npm:1.14.3":
   version: 1.14.3
   resolution: "@googlemaps/js-api-loader@npm:1.14.3"
   dependencies:
@@ -281,21 +281,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@googlemaps/react-wrapper@npm:^1.1.35":
-  version: 1.1.35
-  resolution: "@googlemaps/react-wrapper@npm:1.1.35"
+"@googlemaps/markerclusterer@npm:2.0.7":
+  version: 2.0.7
+  resolution: "@googlemaps/markerclusterer@npm:2.0.7"
   dependencies:
-    "@googlemaps/js-api-loader": ^1.13.2
-  peerDependencies:
-    react: ">=16.8.0"
-  checksum: 76fa473b1bc617c157b58fb8087b61c54e07484c4e983bb25269d7afa025f3d30b77e0cb0cbd37bcd33a0c3d1f3c43c9c070aed2e2a726773eee3d26788c4abf
-  languageName: node
-  linkType: hard
-
-"@googlemaps/typescript-guards@npm:^1.0.16":
-  version: 1.0.16
-  resolution: "@googlemaps/typescript-guards@npm:1.0.16"
-  checksum: 1f5e0ce8a5b0ba69a2f887d30e3aeacedde4a0e5b605c68946460e4bd267b0ed88c0ce117588f98a972f73d32ae0e4a62abcd3ab60b8ebd5cdfb980c9759ced1
+    fast-deep-equal: ^3.1.3
+    supercluster: ^7.1.3
+  checksum: 2a15f84e30d3a2af14d591e54200b2f96e86afbd15680df6ed0714a06c7149c31f2c79aed7cbba83b4af613cae6d91d4f98c9ad4c23194a0cd3ed1433055f87d
   languageName: node
   linkType: hard
 
@@ -493,6 +485,37 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@react-google-maps/api@npm:^2.12.0":
+  version: 2.12.0
+  resolution: "@react-google-maps/api@npm:2.12.0"
+  dependencies:
+    "@googlemaps/js-api-loader": 1.14.3
+    "@googlemaps/markerclusterer": 2.0.7
+    "@react-google-maps/infobox": 2.11.8
+    "@react-google-maps/marker-clusterer": 2.11.8
+    "@types/google.maps": 3.49.1
+    invariant: 2.2.4
+  peerDependencies:
+    react: ^16.8 || ^17 || ^18
+    react-dom: ^16.8 || ^17 || ^18
+  checksum: 86a8157e0198d11795bce271a681a837fd20eff0d2e6981290557f813c88f3be797e4e6d3acfe708dbc8aa0658ba1689c33556b86c58266ec1f67c09a2aecad7
+  languageName: node
+  linkType: hard
+
+"@react-google-maps/infobox@npm:2.11.8":
+  version: 2.11.8
+  resolution: "@react-google-maps/infobox@npm:2.11.8"
+  checksum: 3567c0d19be01d1b3bc4f8d417b06eb74125cb094ae6b68cff47ba54c104114f0b4b86e06c20954ad30e979506457c2778b6bff4bb4068750fd7a1ea653767f4
+  languageName: node
+  linkType: hard
+
+"@react-google-maps/marker-clusterer@npm:2.11.8":
+  version: 2.11.8
+  resolution: "@react-google-maps/marker-clusterer@npm:2.11.8"
+  checksum: 09307e55a905ec3425820dc664cfb3c9f43b59d55a3dc567bb36d09227079dc331f7446cc6f4de6a2b13d3411d21f365e93a829586bad2b637afbe6e32d261e0
+  languageName: node
+  linkType: hard
+
 "@rushstack/eslint-patch@npm:^1.1.3":
   version: 1.1.4
   resolution: "@rushstack/eslint-patch@npm:1.1.4"
@@ -506,6 +529,13 @@ __metadata:
   dependencies:
     tslib: ^2.4.0
   checksum: 0b8c86ad03b17b8fe57dc4498e25dc294ea6bc42558a6b92d8fcd789351dac80199409bef38a2e3ac06aae0fedddfc0ab9c34409acbf74e55d1bbbd74f68b6b7
+  languageName: node
+  linkType: hard
+
+"@types/google.maps@npm:3.49.1":
+  version: 3.49.1
+  resolution: "@types/google.maps@npm:3.49.1"
+  checksum: c504398f96a407066fb25825ac9486f5f5bd4a44faab78a0cc792541edc7f2eeef62dd6608a4a9cf856fe2cd3815b29e0ec1183293419d19230055fa247e9dd2
   languageName: node
   linkType: hard
 
@@ -1608,7 +1638,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"glob@npm:7.1.7":
+"glob@npm:7.1.7, glob@npm:^7.1.3":
   version: 7.1.7
   resolution: "glob@npm:7.1.7"
   dependencies:
@@ -1622,7 +1652,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"glob@npm:^7.1.3, glob@npm:^7.2.0":
+"glob@npm:^7.2.0":
   version: 7.2.3
   resolution: "glob@npm:7.2.3"
   dependencies:
@@ -1779,6 +1809,15 @@ __metadata:
     has: ^1.0.3
     side-channel: ^1.0.4
   checksum: 1944f92e981e47aebc98a88ff0db579fd90543d937806104d0b96557b10c1f170c51fb777b97740a8b6ddeec585fca8c39ae99fd08a8e058dfc8ab70937238bf
+  languageName: node
+  linkType: hard
+
+"invariant@npm:2.2.4":
+  version: 2.2.4
+  resolution: "invariant@npm:2.2.4"
+  dependencies:
+    loose-envify: ^1.0.0
+  checksum: cc3182d793aad82a8d1f0af697b462939cb46066ec48bbf1707c150ad5fad6406137e91a262022c269702e01621f35ef60269f6c0d7fd178487959809acdfb14
   languageName: node
   linkType: hard
 
@@ -1987,6 +2026,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"kdbush@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "kdbush@npm:3.0.0"
+  checksum: bc5fa433958e42664a8a92457e4f0d1db55b3b8e36956aac0102964adb2eab043bdbff156570dc8d867144ceff588fb7a1c6e099ba9be068cd1767a73e1ace92
+  languageName: node
+  linkType: hard
+
 "language-subtag-registry@npm:~0.3.2":
   version: 0.3.22
   resolution: "language-subtag-registry@npm:0.3.22"
@@ -2051,7 +2097,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"loose-envify@npm:^1.1.0, loose-envify@npm:^1.4.0":
+"loose-envify@npm:^1.0.0, loose-envify@npm:^1.1.0, loose-envify@npm:^1.4.0":
   version: 1.4.0
   resolution: "loose-envify@npm:1.4.0"
   dependencies:
@@ -2111,17 +2157,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ms@npm:2.1.2":
+"ms@npm:2.1.2, ms@npm:^2.1.1":
   version: 2.1.2
   resolution: "ms@npm:2.1.2"
   checksum: 673cdb2c3133eb050c745908d8ce632ed2c02d85640e2edb3ace856a2266a813b30c613569bf3354fdf4ea7d1a1494add3bfa95e2713baa27d0c2c71fc44f58f
-  languageName: node
-  linkType: hard
-
-"ms@npm:^2.1.1":
-  version: 2.1.3
-  resolution: "ms@npm:2.1.3"
-  checksum: aa92de608021b242401676e35cfa5aa42dd70cbdc082b916da7fb925c542173e36bce97ea3e804923fe92c0ad991434e4a38327e15a1b5b5f945d66df615ae6d
   languageName: node
   linkType: hard
 
@@ -2618,8 +2657,7 @@ next@latest:
     "@fortawesome/free-regular-svg-icons": ^6.1.1
     "@fortawesome/free-solid-svg-icons": ^6.1.1
     "@fortawesome/react-fontawesome": latest
-    "@googlemaps/react-wrapper": ^1.1.35
-    "@googlemaps/typescript-guards": ^1.0.16
+    "@react-google-maps/api": ^2.12.0
     "@types/google.maps": ^3.48.8
     "@types/node": 18.0.3
     "@types/react": 18.0.15
@@ -2798,6 +2836,15 @@ next@latest:
     babel-plugin-macros:
       optional: true
   checksum: 86d55819ebeabd283a574d2f44f7d3f8fa6b8c28fa41687ece161bf1e910e04965611618921d8f5cd33dc6dae1033b926a70421ae5ea045440a9861edc3e0d87
+  languageName: node
+  linkType: hard
+
+"supercluster@npm:^7.1.3":
+  version: 7.1.5
+  resolution: "supercluster@npm:7.1.5"
+  dependencies:
+    kdbush: ^3.0.0
+  checksum: 69863238870093b96617135884721b6343746e14f396b2d67d6b55c52c362ec0516c5e386aa21815e75a9cef2054e831ac34023d0d8b600091d28cea0794f027
   languageName: node
   linkType: hard
 
