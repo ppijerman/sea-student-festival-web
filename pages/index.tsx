@@ -15,20 +15,27 @@ const Section = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: 0;
 `;
 
 const Heading = styled.h1`
   text-align: center;
   font-family: 'Piazzolla', serif;
   font-size: 72px;
+  line-height: 80%;
   font-weight: 900;
   color: var(--yellow);
+  z-index: 0;
 `;
 
 const MapWrapper = styled.div`
   width: 100%;
   height: 300px;
 `;
+
+const MainWrapper = styled.main`
+  z-index: 99;
+  `;
 
 const Home: NextPage = () => {
   return (
@@ -37,7 +44,7 @@ const Home: NextPage = () => {
         <title>Southeast Asian Student Festival 2022</title>
       </Head>
 
-      <main>
+      <MainWrapper>
         <Section>
           <MapWrapper>
             <div id={'map'}></div>
@@ -61,7 +68,7 @@ const Home: NextPage = () => {
         <Section>
           <Heading>Media Partners</Heading>
         </Section>
-      </main>
+      </MainWrapper>
     </>
   );
 };

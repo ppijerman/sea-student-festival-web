@@ -7,6 +7,7 @@ const CountdownWrapper = styled.div`
   flex-direction: column;
   max-width: 100%;
   margin: 0 20px;
+  z-index: 0;
 `;
 
 const CountdownFrame = styled.div`
@@ -46,7 +47,8 @@ const CountdownTitle = styled.div`
   font-family: 'Piazzolla', serif;
   line-height: 80%;
   margin-bottom: 20px;
-  word-break: break-word;
+  word-break: keep-all;
+  
   @media only screen and (min-width: 420px) {
     font-size: 48px;
   }

@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import
+    styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 
@@ -19,6 +20,8 @@ const FooterWrapper = styled.footer`
 
   @media only screen and (max-width: 992px) {
     flex-direction: column;
+    text-align: center;
+    align-items: center;
   }
 `;
 
@@ -34,7 +37,7 @@ const TextLogo = styled.span``;
 
 const ContactWrapper = styled.div`
   width: 20%;
-
+  
   @media only screen and (max-width: 992px) {
     width: 100%;
   }
@@ -62,10 +65,14 @@ const ContactItem = ({ link, text }) => {
   );
 };
 
-const SocialMedias = styled.ul`
-  display: inline;
-  list-style-type: none;
+const SocialMedias = styled.div`
+  display: flex;
+  gap: 20px;
   padding: 0;
+
+  @media only screen and (max-width: 992px) {
+    justify-content: center;
+  }
 `;
 
 const SocialMedia = styled.a`
@@ -90,11 +97,11 @@ const FooterText = styled.p`
 // @ts-ignore
 const SocialMediaItem = ({ link, icon_class }) => {
   return (
-    <li>
+    <div>
       <SocialMedia href={link} target={'_blank'}>
         <FontAwesomeIcon icon={icon_class} width={20} />
       </SocialMedia>
-    </li>
+    </div>
   );
 };
 

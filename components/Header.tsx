@@ -9,9 +9,9 @@ const HeaderWrapper = styled.header`
   justify-content: space-between;
   color: var(--sand);
   /* From https://css.glass */
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
+  z-index: 0;
 `;
 
 const HeaderItem = styled.div`

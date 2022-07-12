@@ -1,9 +1,8 @@
 import styled from 'styled-components';
 
 const BackgroundWrapper = styled.div`
-  height: 100%;
   z-index: -999;
-  position: absolute;
+  height: 0;
 `;
 
 const starImagePaths = [];
@@ -21,11 +20,11 @@ const RandomStarGenerator = () => {
 // }
 
 const Background = () => (
-  <>
+  <BackgroundWrapper>
     <div id="stars"></div>
     <div id="stars2"></div>
     <div id="stars3"></div>
-  </>
+  </BackgroundWrapper>
 );
 
 export default Background;
