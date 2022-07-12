@@ -61,7 +61,7 @@ const Home: NextPage = () => {
         <Section>
           <Heading>Venue</Heading>
           <MapWrapper>
-            <Map lat={52.520008} lng={13.404954} zoom={8} label={'Venue'}></Map>
+            <Map lat={52.520008} lng={13.404954} zoom={10} label={'Venue'}/>
           </MapWrapper>
         </Section>
         <Section>

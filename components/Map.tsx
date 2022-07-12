@@ -28,7 +28,7 @@ const Map = ({lat, lng, zoom, label}) => {
 
     return (
         <GoogleMap zoom={zoom} center={center} mapContainerClassName={'gmaps-container'} id={mapId}>
-            <Marker position={center} label={'Venue'}/>
+            <Marker position={center} label={label}/>
         </GoogleMap>
     )
 };
