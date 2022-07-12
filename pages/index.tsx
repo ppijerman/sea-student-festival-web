@@ -29,8 +29,10 @@ const Heading = styled.h1`
 `;
 
 const MapWrapper = styled.div`
-  width: 100%;
-  height: 300px;
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  height: 500px;
 `;
 
 const MainWrapper = styled.main`

@@ -145,6 +145,10 @@ const Countdown = ({ time }) => {
   const minutes = new Date(duration).getMinutes();
   const seconds = new Date(duration).getSeconds();
 
+  if (duration <= 0) {
+    return <></>
+  }
+
   return (
     <CountdownWrapper>
       <CountdownFrame>
