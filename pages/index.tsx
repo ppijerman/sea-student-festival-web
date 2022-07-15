@@ -4,6 +4,11 @@ import Countdown from '../components/Countdown';
 import styled from 'styled-components';
 import Map from '../components/Map';
 
+const chooseOne = (arr : string[]) => {
+  const index = Math.floor(Math.random() * arr.length);
+  return arr[index];
+}
+
 const Section = styled.div`
   padding: 25px;
   display: flex;
@@ -173,7 +178,7 @@ const Home: NextPage = () => {
             <Information>
               <TagLine>For a Stronger<br/>Collaboration</TagLine>
               <br/>
-              <PlaceAndDate>Berlin, 27 August 2022</PlaceAndDate>
+              <PlaceAndDate>Berlin, 27<sup>th</sup> - 28<sup>th</sup> August 2022</PlaceAndDate>
             </Information>
           </FramesWrapper>
         </Section>
