@@ -32,11 +32,11 @@ const Heading = styled.h1`
 const MapWrapper = styled.div`
   display: flex;
   justify-content: center;
-  width: 60%;
+  width: calc(100vw - 50px);
   height: 500px;
 
-  @media only screen and (max-width: 992px) {
-    width: 80%;
+  @media only screen and (min-width: 992px) {
+    width: 60%;
   }
 `;
 
