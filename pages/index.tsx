@@ -213,7 +213,7 @@ const Home: NextPage = () => {
             Brandenburger Tor
           </MapText>
           <MapWrapper>
-            <Map lat={52.520008} lng={13.404954} zoom={15} label={'Venue'}/>
+            <Map lat={52.520008} lng={13.404954} zoom={15}/>
           </MapWrapper>
           <Button href={'https://maps.google.com'} style={{
             zIndex: 9999,

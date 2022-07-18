@@ -13,7 +13,7 @@ const MapLoading = styled.div`
   `;
 
 // @ts-ignore
-const Map = ({lat, lng, zoom, label}) => {
+const Map = ({lat, lng, zoom}) => {
     const mapId = process.env.NEXT_PUBLIC_MAP_ID === undefined ? '' : process.env.NEXT_PUBLIC_MAP_ID;
     const { isLoaded } = useLoadScript({
         googleMapsApiKey: process.env.NEXT_PUBLIC_MAP_API_KEY === undefined ? '' : process.env.NEXT_PUBLIC_MAP_API_KEY,
