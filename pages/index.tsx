@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Countdown from '../components/Countdown';
 import styled from 'styled-components';
 import Map from '../components/Map';
+import Button from "../components/Button";
 
 const chooseOne = (arr : string[]) => {
   const index = Math.floor(Math.random() * arr.length);
@@ -163,6 +164,24 @@ const MainWrapper = styled.main`
   z-index: 99;
   `;
 
+const MapText = styled.span`
+  display: block;
+  font-family: 'Piazzolla', serif;
+  font-weight: bolder;
+  color: var(--yellow);
+  background: var(--black);
+  margin-right: 45%;
+  margin-bottom: -20px;
+  z-index: 9999;
+  line-height: 90%;
+  padding: 10px;
+  font-size: 20px;
+  
+  @media only screen and (min-width: 1280px) {
+    font-size: 48px;
+  }
+  `;
+
 const Home: NextPage = () => {
   return (
     <>
@@ -190,9 +209,18 @@ const Home: NextPage = () => {
         </Section>
         <Section>
           <Heading>Venue</Heading>
+          <MapText>
+            Brandenburger Tor
+          </MapText>
           <MapWrapper>
-            <Map lat={52.520008} lng={13.404954} zoom={13} label={'Venue'}/>
+            <Map lat={52.520008} lng={13.404954} zoom={15} label={'Venue'}/>
           </MapWrapper>
+          <Button href={'https://maps.google.com'} style={{
+            zIndex: 9999,
+            marginTop: '50px',
+          }}>
+            Open in Google Maps
+          </Button>
         </Section>
         <Section>
           <Heading>Sponsors</Heading>
