@@ -189,7 +189,7 @@ const MapText = styled.span`
   line-height: 90%;
   padding: 10px;
   font-size: 20px;
-
+  text-wrap: normal;
   @media only screen and (min-width: 1280px) {
     font-size: 48px;
   }
@@ -330,17 +330,17 @@ const Home: NextPage = () => {
         </Section>
         <Section>
           <Heading>Venue</Heading>
-          <MapText>Brandenburger Tor</MapText>
+          <MapText>
+            Werner-Seelenbinder-Sportpark,
+            <br/>12051, Berlin
+          </MapText>
           <MapWrapper>
-            <Map lat={52.520008} lng={13.404954} zoom={15} />
+            <Map lat={52.4685396} lng={13.4185596} zoom={16}/>
           </MapWrapper>
-          <Button
-            href={'https://maps.google.com'}
-            style={{
-              zIndex: 9999,
-              marginTop: '50px',
-            }}
-          >
+          <Button href={'https://goo.gl/maps/wkBX5PyzzpeBVHPf7'} style={{
+            zIndex: 9999,
+            marginTop: '50px',
+          }}>
             Open in Google Maps
           </Button>
         </Section>
