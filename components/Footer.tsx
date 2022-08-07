@@ -117,8 +117,7 @@ const Footer = () => {
       <ContactWrapper>
         <FooterTitle>Contact</FooterTitle>
         <Contacts>
-          <ContactItem link={'https://google.com'} text={'Ticket'} />
-          <ContactItem link={'https://google.com'} text={'Ticket'} />
+          <ContactItem link={'mailto:seastudentfestival@ppijerman.org'} text={'Committee Emailgit '} />
         </Contacts>
       </ContactWrapper>
       <ContactWrapper>
