@@ -200,8 +200,10 @@ const Home: NextPage = () => {
           <Stack
             direction={{ xs: 'column', sm: 'row' }}
             spacing={{ xs: 1, sm: 2 }}
+            alignItems="center"
+            justifyContent="center"
           >
-            <Card sx={{ maxWidth: 345 }}>
+            <Card sx={{ width: 255 }}>
               <CardActionArea>
                 <CardMedia
                   component="img"
@@ -210,7 +212,7 @@ const Home: NextPage = () => {
                 />
               </CardActionArea>
             </Card>
-            <Card sx={{ maxWidth: 345 }}>
+            <Card sx={{ width: 315 }}>
               <CardActionArea>
                 <CardMedia
                   component="img"
@@ -226,8 +228,10 @@ const Home: NextPage = () => {
           <Stack
             direction={{ xs: 'column', sm: 'row' }}
             spacing={{ xs: 1, sm: 2 }}
+            alignItems="center"
+            justifyContent="center"
           >
-            <Card sx={{ maxWidth: 345 }}>
+            <Card sx={{ width: 255 }}>
               <CardActionArea>
                 <CardMedia
                   component="img"
@@ -236,7 +240,7 @@ const Home: NextPage = () => {
                 />
               </CardActionArea>
             </Card>
-            <Card sx={{ maxWidth: 345 }}>
+            <Card sx={{ width: 315 }}>
               <CardActionArea>
                 <CardMedia
                   component="img"
