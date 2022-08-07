@@ -28,7 +28,7 @@ import {
   Heading,
   MapText,
   MapWrapper,
-} from './index.style';
+} from '../styles/index.style';
 import {
   Card,
   CardActionArea,
