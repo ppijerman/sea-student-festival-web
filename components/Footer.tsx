@@ -17,6 +17,7 @@ const FooterWrapper = styled.footer`
   -webkit-backdrop-filter: blur(20px);
   font-family: 'Montserrat', sans-serif;
   font-weight: normal;
+  margin-top: 100px;
 
   @media only screen and (max-width: 992px) {
     flex-direction: column;

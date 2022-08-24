@@ -36,6 +36,7 @@ import {
   CardMedia,
   Stack,
 } from '@mui/material';
+import {SpaceBar} from "@mui/icons-material";
 
 const chooseOne = (arr: string[]) => {
   const index = Math.floor(Math.random() * arr.length);
@@ -62,13 +63,13 @@ const Home: NextPage = () => {
               </TagLine>
               <br />
               <PlaceAndDate>
-                Berlin, 27<sup>th</sup> - 28<sup>th</sup> August 2022
+                Berlin, 28<sup>th</sup>August 2022, <br/>3<sup>rd</sup> - 4<sup>th</sup> September 2022
               </PlaceAndDate>
             </Information>
           </FramesWrapper>
         </Section>
         <Section>
-          <Countdown time={Date.parse('27 Aug 2022 00:00:00 GMT+1')} />
+          <Countdown time={Date.parse('28 Aug 2022 09:00:00 GMT+1')} />
         </Section>
         <Section>
           <Heading>Agenda</Heading>
@@ -80,22 +81,22 @@ const Home: NextPage = () => {
                 variant="body2"
                 color="var(--sand)"
               >
-                27th August
+                28<sup>th</sup> August 2022
                 <br />
-                09:30
+                9 AM - 12 PM CEST
+                <br/>
+                Poststadion – Lehrter Str. 59, 10557 Berlin
               </TimelineOppositeContent>
               <TimelineSeparator>
                 <TimelineConnector />
-                <TimelineDot color="inherit">
-                  <VerticalShadesIcon />
-                </TimelineDot>
+                <TimelineDot color="primary">
+                  </TimelineDot>
                 <TimelineConnector />
               </TimelineSeparator>
-              <TimelineContent sx={{ py: '12px', px: 2 }}>
+              <TimelineContent sx={{ m: 'auto' }}>
                 <Typography variant="h6" component="span">
-                  Opening
+                  Soccer Fun Match
                 </Typography>
-                <Typography>Our opening ceremony</Typography>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -105,22 +106,22 @@ const Home: NextPage = () => {
                 variant="body2"
                 color="var(--sand)"
               >
-                27-28th August
+                3<sup>rd</sup> September 2022
                 <br />
-                09:30 to 17:30
+                10 AM - 4 PM CEST
+                <br/>
+                Sportzentrum TiB Berlin 1848 e.V. – Columbiadamm 111, 10965 Berlin
               </TimelineOppositeContent>
               <TimelineSeparator>
                 <TimelineConnector />
-                <TimelineDot color="inherit">
-                  <FastfoodIcon />
+                <TimelineDot color="primary">
                 </TimelineDot>
                 <TimelineConnector />
               </TimelineSeparator>
-              <TimelineContent sx={{ py: '12px', px: 2 }}>
+              <TimelineContent sx={{ m: 'auto' }}>
                 <Typography variant="h6" component="span">
-                  Food Bazaar
+                  Badminton Competition
                 </Typography>
-                <Typography>Because it&apos;s awesome!</Typography>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -130,70 +131,25 @@ const Home: NextPage = () => {
                 variant="body2"
                 color="var(--sand)"
               >
-                27-28th August
+                4<sup>th</sup> September 2022
                 <br />
-                09:30 to 17:30
+                10 AM - 6 PM CEST
+                <br/>
+                Primo-Levi-Gymnasium, Woelckpromenade 11, 13086 Berlin
               </TimelineOppositeContent>
               <TimelineSeparator>
                 <TimelineConnector />
-                <TimelineDot color="inherit">
-                  <SportsHandballIcon />
+                <TimelineDot color="primary">
                 </TimelineDot>
                 <TimelineConnector />
               </TimelineSeparator>
-              <TimelineContent sx={{ py: '12px', px: 2 }}>
+              <TimelineContent sx={{ m: 'auto' }}>
                 <Typography variant="h6" component="span">
-                  Sportfest
+                  Basketball and <br/>Volleyball <br/>Competition
                 </Typography>
-                <Typography>Wouldn&apos;t one be awesome?</Typography>
-              </TimelineContent>
-            </TimelineItem>
-            <TimelineItem>
-              <TimelineOppositeContent
-                sx={{ m: 'auto 0' }}
-                align="right"
-                variant="body2"
-                color="var(--sand)"
-              >
-                28th August
-                <br />
-                17:30
-              </TimelineOppositeContent>
-              <TimelineSeparator>
-                <TimelineConnector />
-                <TimelineDot color="inherit">
-                  <EmojiPeopleIcon />
-                </TimelineDot>
-                <TimelineConnector />
-              </TimelineSeparator>
-              <TimelineContent sx={{ py: '12px', px: 2 }}>
-                <Typography variant="h6" component="span">
-                  Closing
-                </Typography>
-                <Typography>See you again later!</Typography>
               </TimelineContent>
             </TimelineItem>
           </Timeline>
-        </Section>
-        <Section>
-          <Heading>Venue</Heading>
-          <MapText>
-            Werner-Seelenbinder-Sportpark,
-            <br />
-            12051, Berlin
-          </MapText>
-          <MapWrapper>
-            <Map lat={52.4685396} lng={13.4185596} zoom={16} />
-          </MapWrapper>
-          <Button
-            href={'https://goo.gl/maps/wkBX5PyzzpeBVHPf7'}
-            style={{
-              zIndex: 9999,
-              marginTop: '50px',
-            }}
-          >
-            Open in Google Maps
-          </Button>
         </Section>
         <Section>
           <Heading>Sponsors</Heading>
@@ -224,28 +180,19 @@ const Home: NextPage = () => {
           </Stack>
         </Section>
         <Section>
-          <Heading>Media Partners</Heading>
+          <Heading>In Collaboration With</Heading>
           <Stack
-            direction={{ xs: 'column', sm: 'row' }}
-            spacing={{ xs: 1, sm: 2 }}
-            alignItems="center"
-            justifyContent="center"
+              direction={{ xs: 'column', sm: 'row' }}
+              spacing={{ xs: 1, sm: 2 }}
+              alignItems="center"
+              justifyContent="center"
           >
             <Card sx={{ width: 255 }}>
               <CardActionArea>
                 <CardMedia
-                  component="img"
-                  height="140"
-                  image="/logo/ppi-berbrand.png"
-                />
-              </CardActionArea>
-            </Card>
-            <Card sx={{ width: 315 }}>
-              <CardActionArea>
-                <CardMedia
-                  component="img"
-                  height="140"
-                  image="/logo/ppi-jerman.png"
+                    component="img"
+                    height="140"
+                    image="/logo/kbri.png"
                 />
               </CardActionArea>
             </Card>
