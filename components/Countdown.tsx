@@ -182,7 +182,7 @@ const Countdown = ({ time }) => {
         </CountdownBody>
       </CountdownFrame>
       <BuyTicketCountdownButton href={'/'}>
-        <ButtonText>Grab your ticket</ButtonText> &rarr;
+        <ButtonText>Register to Play</ButtonText> &rarr;
       </BuyTicketCountdownButton>
     </CountdownWrapper>
   );

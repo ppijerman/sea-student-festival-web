@@ -54,7 +54,7 @@ const Header = () => {
         <HeaderText>Southeast Asia Student Festival 2022</HeaderText>
       </HeaderLogo>
       <HeaderLinks>
-        <HeaderButton href={'https://google.com'}>Join Us!</HeaderButton>
+        <HeaderButton href={'https://google.com'}>Grab your ticket</HeaderButton>
       </HeaderLinks>
     </HeaderWrapper>
   );
