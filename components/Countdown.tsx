@@ -181,7 +181,7 @@ const Countdown = ({ time }) => {
           </CountdownDigit>
         </CountdownBody>
       </CountdownFrame>
-      <BuyTicketCountdownButton href={'/'}>
+      <BuyTicketCountdownButton href={'https://ppij.org/register-ssf'}>
         <ButtonText>Register to Play</ButtonText> &rarr;
       </BuyTicketCountdownButton>
     </CountdownWrapper>
